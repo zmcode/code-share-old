@@ -4,16 +4,16 @@
 
 @import "./base.scss";
 .el-dropdown-menu {
-  background-color: $thirdColor !important;
-  box-shadow: 0 5px 5px 0 $dialogShadow !important;
+  background-color: $thirdColor;
+  box-shadow: 0 5px 5px 0 $dialogShadow;
   border: none !important;
   padding: 5px 0;
   .el-dropdown-menu__item {
-    color: $beforeFocus !important;
-    overflow: hidden !important;
+    color: $beforeFocus;
+    overflow: hidden;
     &:hover {
-      color: $afterFocus !important;
-      background-color: $mainColor !important;
+      color: $afterFocus;
+      background-color: $mainColor;
     }
   }
   .popper__arrow {

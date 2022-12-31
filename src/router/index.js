@@ -11,6 +11,7 @@ export const constantRoutes = [
   {
     path: "/html/instance",
     component: () => import("../App.vue"),
+    name: 'instance'
   },
 ];
 const router = new VueRouter({

@@ -6,6 +6,9 @@ import VueI18n from "vue-i18n";
 import element from "@utils/getElementUI";
 import { codemirror } from "vue-codemirror";
 import router from "./router";
+import * as lodash from "lodash";
+import ImgIcon from "@/components/ImgIcon.vue";
+
 // theme
 import "./assets/css/codemirror.css";
 import "./assets/css/show-hint.css";
@@ -20,6 +23,8 @@ Vue.config.productionTip = false;
 // plugins
 Vue.use(element).use(codemirror).use(VueI18n);
 
+Vue.prototype.$baseLodash = lodash;
+Vue.component("ImgIcon", ImgIcon);
 const jsEcdStore = sessionStorage.getItem("jsEcdStore");
 
 /**

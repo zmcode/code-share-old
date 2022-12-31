@@ -26,34 +26,7 @@
         <i class="icon iconfont" :class="item.class"></i>
       </div>
     </div>
-    <el-dialog
-      title="登录/注册"
-      :visible.sync="loginVisible"
-      width="30%"
-      :close-on-click-modal="false"
-    >
-      <el-form :model="loginForm" label-width="80px" label-position="right">
-        <el-form-item label="账号" prop="account">
-          <el-input
-            type="text"
-            v-model="loginForm.account"
-            autocomplete="off"
-          ></el-input>
-        </el-form-item>
-        <el-form-item label="密码" prop="password">
-          <el-input
-            type="password"
-            v-model="loginForm.password"
-            autocomplete="off"
-          ></el-input>
-        </el-form-item>
-
-        <div style="text-align: center">
-          <el-button @click="login">登录</el-button>
-          <el-button @click="register">注册</el-button>
-        </div>
-      </el-form>
-    </el-dialog>
+    
   </div>
 </template>
 
@@ -83,10 +56,7 @@ export default {
       // 用户是否查看过新版本特性
       isLogRead: true,
       loginVisible: false,
-      loginForm: {
-        account: "",
-        password: "",
-      },
+ 
     };
   },
   created() {

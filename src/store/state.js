@@ -1,13 +1,13 @@
 export default {
-  language: 'zh',
-  visibleDialog: '',
-  preprocessor: ['HTML', 'CSS', 'JavaScript'],
-  currentTab: 'HTML',
+  language: "zh",
+  visibleDialog: "",
+  preprocessor: ["HTML", "CSS", "JavaScript"],
+  currentTab: "HTML",
   mdToolbarVisible: false,
   instanceCode: {
-    HTML: '<h1>Welcome to JS-Encoder!</h1>',
-    CSS: '',
-    JavaScript: '',
+    HTML: "<h1>Welcome to JS-Encoder!</h1>",
+    CSS: "",
+    JavaScript: "",
   },
   instanceSetting: {
     delayTime: 500,
@@ -17,9 +17,9 @@ export default {
     lint: true,
     lineWrap: true,
     indentSpaces: 2,
-    fontFamily: 'Consolas',
+    fontFamily: "Consolas",
     fontSize: 14,
-    headTags: ''
+    headTags: "",
   },
   instanceExtLinks: {
     cssLinks: [],
@@ -42,7 +42,7 @@ export default {
     error: 0,
     warn: 0,
     info: 0,
-    sum: 0
+    sum: 0,
   },
   hasUploadCode: false,
   shouldResetCode: false,
@@ -52,7 +52,22 @@ export default {
    */
   cpntMode: false,
   // 组件名称，现支持：Vue2、Vue3
-  cpntName: '',
+  cpntName: "",
   // 组件代码
-  cpntCode: ''
-}
+  cpntCode: "",
+
+  // 用户数据
+  loginState: false,
+  loginInfo: {
+    username: "",
+    nickname: "",
+    avatar: "",
+  },
+  /* 当前显示的用户的详细信息 */
+  curUserDetail: {
+    username: "",
+    avatar: "",
+    nickname: "",
+    token: "",
+  },
+};
